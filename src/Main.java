@@ -40,7 +40,7 @@ public class Main {
 
     public static void task3 () {
         System.out.println("Задача 3");
-        int year = 2020;
+        int year = 2000;
         if (year % 4 == 0 || year % 400 == 0){
             System.out.println(year + " год является високосным");
         } else {
@@ -50,7 +50,21 @@ public class Main {
 
     public static void task4 () {
         System.out.println("Задача 4");
-        int deliveryDistance = 12;
+        int deliveryDistance = 15;
+        int day = 1;
+        if (deliveryDistance > 20){
+            day++;
+        }
+        if (deliveryDistance > 60){
+            day++;
+        }
+        if (deliveryDistance > 100){
+            System.out.println("Доставки нет");
+        }else {
+            System.out.println("Потребуется дней: " + day);
+        }
+
+ /*
         if (deliveryDistance < 20){
             System.out.println("Потребуется дней: 1");
         }
@@ -63,6 +77,8 @@ public class Main {
         if (deliveryDistance > 100){
             System.out.println("Доставки нет");
         }
+*/
+
     }
 
     public static void task5 () {
